@@ -7,28 +7,22 @@ const EventsList = () => {
   
   return (
     <Box
-    width='90%' margin='40px auto' bgcolor="#f2f2f2" 
+    width='100%' display="flex" flexDirection="column" alignItems="center" justifyContent="space-evenly" bgcolor="#f2f2f2" height="70vh"
    >
+    <Box>
     <Typography textAlign="center">
       News & Events
     </Typography>
      <Typography variant='h3' textAlign='center'>
         Our Featured <b>Events</b>
      </Typography>
+    </Box>  
   
      <Box
-      margin="20px auto"
-      display="grid"
-      gridTemplateColumns="repeat(auto-fill, 300px)"
-      justifyContent="space-around"
-      rowGap="20px"
-      columnGap="1.33%"
+      
      >
         <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
+       
      </Box>
    </Box>
   )

@@ -5,21 +5,23 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import Dummy from '../asset/dummy.jpg';
+import Dummy from '../asset/bg-ideathon.png';
 import { Link } from "react-router-dom";
 import { AiFillCalendar } from "react-icons/ai";
 import { Box } from "@mui/material";
+import { shades } from "../theme";
 
 export default function EventCard() {
 
   return (
     <Card
       sx={{
-        maxWidth: 345,
+        maxWidth: "345px",
         borderRadius: "10px",
+        height:"300px"
       }}
     >
-      <CardMedia sx={{ height: 140 }} image={Dummy} title="green iguana" />
+      <CardMedia sx={{ height: "140px", objectFit:"fill" }}  image={Dummy} title="green iguana" />
       <CardContent>
         <Typography gutterBottom variant="subtitle" component="div">
           Venue: ISMT Kathmandu
@@ -41,7 +43,7 @@ export default function EventCard() {
           alignItems="center"
           justifyContent="space-evenly"
         >
-          <AiFillCalendar />
+          <AiFillCalendar color={shades.secondary[500]} />
           <Typography variant="subtitle">03-03-2023</Typography>
         </Box>
         <Button size="small"><Link to="/eventDetails"> Register Now </Link></Button>

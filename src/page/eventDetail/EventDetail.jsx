@@ -5,11 +5,14 @@ import About from './About';
 import Schedule from './Schedule';
 import Faq from './Faq';
 import Footer from './Footer';
+import { Box } from '@mui/material';
 
 
 export const EventDetail = () => {
   return (
-    <>
+    <Box sx={{
+      overflow:"hidden"
+    }}>
         <Banner />
         <About />
         <Prizes />        
@@ -17,7 +20,7 @@ export const EventDetail = () => {
         <Faq />
         <Footer />
 
-    </>
+    </Box>
 
   )
 }

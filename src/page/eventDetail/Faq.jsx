@@ -5,16 +5,18 @@ import faq from '../../data';
 
 export default function Faq() {
   return (
-    <Box display="flex" justifyContent="center" alignItems="center" width="100%" flexDirection="column" margin="15px">  
+    <Box width="100%" display="flex" justifyContent="center" alignItems="center" flexDirection="column" >  
       <Typography variant='h3' margin="5px">
         Faq
       </Typography> 
+      <Box width="90%" display="flex" justifyContent="center" alignItems="center" flexDirection="column">
       {
         faq.map((data) => (
           <FaqCard question={data.question} answer={data.answer}/>
         )
         )
-      } 
+      }
+      </Box>      
      
     </Box>
   );

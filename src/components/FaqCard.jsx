@@ -11,7 +11,7 @@ const FaqCard = ({ question, answer }) => {
   return (
     <Accordion sx={{
       margin:"5px",
-      width:"70%"
+      width:"90%"
     }}>
         <AccordionSummary
           expandIcon={<BsFillArrowDownSquareFill color={shades.secondary[400]} />}
