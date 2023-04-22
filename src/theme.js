@@ -55,13 +55,13 @@ export const theme = createTheme({
     fontSize: 11,
     h1: {      
       fontWeight: 800,
-      fontSize: 68,
+      fontSize: { lg: "68", md:"50", sm:"40"},
       color:shades.secondary[600]
       
     },
     h2: {     
       fontWeight: 600,
-      fontSize: 36,
+      fontSize: { lg:"36", md:"30", sm:"26", xs:"20"},
       color:shades.primary[600]
     },
     h3: {     
