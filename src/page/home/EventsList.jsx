@@ -1,13 +1,13 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 import EventCard from '../../components/EventCard';
-
+import {eventInfo} from '../../data';
 
 const EventsList = () => {
   
   return (
     <Box
-    width='100%' display="flex" flexDirection="column" alignItems="center" justifyContent="space-evenly" bgcolor="#f2f2f2" height="70vh"
+    width='100%' height="auto" padding="20px" display="flex" flexDirection="column" alignItems="center" justifyContent="center" bgcolor="#f2f2f2" 
    >
     <Box>
     <Typography textAlign="center">
@@ -19,9 +19,25 @@ const EventsList = () => {
     </Box>  
   
      <Box
-      
+      sx={{
+        width:"100%",
+        display:"grid",
+        gridTemplateColumns:"repeat(auto-fit, 300px)",
+       
+        gridGap:"30px",
+        justifyContent:"center",
+        gridTemplateRow:"repeat(auto=fit, 300px)",
+        alignItems:"center",
+        
+
+      }}
      >
-        <EventCard />
+      {
+        eventInfo.map((item) => (
+          <EventCard venue={item.venue} body={item.body} date={item.date}/>
+        ))
+      }
+        
        
      </Box>
    </Box>

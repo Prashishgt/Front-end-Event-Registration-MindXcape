@@ -1,7 +1,7 @@
 import React from 'react';
 import FaqCard from '../../components/FaqCard';
 import { Box, Typography } from '@mui/material';
-import faq from '../../data';
+import { faq } from '../../data';
 
 export default function Faq() {
   return (

@@ -5,7 +5,7 @@ import PrizeCard from '../../components/PrizeCard';
 const Prizes = () => {
   return (
     <Box
-    width='90%' margin='40px auto' bgcolor="#f2f2f2" border="1px solid green" padding="40px"
+    width='90%' margin='40px auto' bgcolor="#f2f2f2"  padding="40px"
    >
     
      <Typography variant='h3' textAlign='center'>

@@ -1,4 +1,4 @@
-const faq = [
+export const faq = [
   {
     question: "What is Ideathon?",
     answer:
@@ -18,9 +18,44 @@ const faq = [
     `,
   },
   {
-    question: "Will Food and Drinks be provided at DeerHack?",
+    question: "Will Food and Drinks be provided at Ideathon?",
     answer:"Yes, participants will be provided with foods and refreshments"
   },
 ];
 
-export default faq;
+
+
+
+
+export const eventInfo = [
+  {
+    venue: " Venue: ISMT Kathmandu",
+    body: `Ideathon 2023 - "An ideathon is not just about generating ideas, but about harnessing the power of collaboration and creativity to turn those ideas into reality."`,
+    date: "03-03-2023"
+  },
+  {
+    venue:"Comming Soon",
+    body:`Comming Soon`,
+    date: "Comming Soon"
+  },
+  {
+    venue:"Comming Soon",
+    body:`Comming Soon`,
+    date: "Comming Soon"
+  },
+]
+
+export const prize = [
+  {
+    title:"1st",
+    sum:"Rs.10,000"
+  },
+  {
+    title:"2nd",
+    sum:"Rs.5,000"
+  },
+  {
+    title:"3rd",
+    sum:"Rs.200"
+  }
+]

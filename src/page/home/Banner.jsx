@@ -9,7 +9,7 @@ const Banner = () => {
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
-        height="300px"
+        height="250px"
         width="100%"
         sx={{
             backgroundColor:shades.secondary[500]
