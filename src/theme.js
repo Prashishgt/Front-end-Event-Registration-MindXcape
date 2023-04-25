@@ -50,12 +50,22 @@ export const theme = createTheme({
       light: shades.neutral[100],
     },
   },
+  breakpoints: {
+    values: {
+      xxs: 320,
+      xs:375,
+      sm: 481,
+      md: 768,
+      lg: 1024,
+      xl: 1200,
+    },
+  },
   typography: {   
     fontFamily: ["Poppins", "sans-serif"].join(","), 
     fontSize: 11,
     h1: {      
-      fontWeight: 800,
-      fontSize: { lg: "68", md:"50", sm:"40"},
+      fontWeight: {lg: "800", md:"800", sm:"600", xs:"600"},
+      fontSize: { lg: "68", md:"50", sm:"40", xs:"20", xxs:"20" },
       color:shades.secondary[600]
       
     },
@@ -65,12 +75,13 @@ export const theme = createTheme({
       color:shades.primary[600]
     },
     h3: {     
-      fontSize: 20,
+      fontSize: {lg:"20", md:"18", sm:"14", xs:"12"},
       fontWeight:700,
       color:shades.secondary[600]
     },
     h4: {   
-      fontSize: 14,
+      fontSize: {lg:"16", md:"16", sm:"13", xs:"12"},
+      color:shades.primary[600]
     },
   },
 });

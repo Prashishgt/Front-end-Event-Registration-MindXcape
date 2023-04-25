@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
 import Banner from '../home/Banner';
-import Footer from '../eventDetail/Footer';
+import FooterHome from '../../page/home/FooterHome'
 import Registration from '../../components/Registration';
 
 const RegistrationHome = () => {
@@ -9,7 +9,7 @@ const RegistrationHome = () => {
     <Box>
         <Banner />
         <Registration />
-        <Footer />
+        <FooterHome />
     </Box>
   )
 }

@@ -55,7 +55,7 @@ const Banner = () => {
           <img src="https://www.ismt.edu.np/Frontend/loader-img.webp" alt="" />
         </Box>
         <Box>
-          <Typography variant="h1">Ideathon 2023</Typography>
+          <Typography variant="h1" fontSize={{ lg: "68", md:"50", sm:"40", xs:"20", xxs:"20"}}>Ideathon 2023</Typography>
         </Box>
         <Box>
           <Typography variant="h2">11th May</Typography>

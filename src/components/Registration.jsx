@@ -58,7 +58,7 @@ export default function Registration() {
 
   return (
     <Box 
-   
+      height="100vh"
       display="flex"
       flexDirection="column"
       width="100%"
@@ -136,7 +136,20 @@ export default function Registration() {
             label="Expectation"
             placeholder="What is your motivation/expectation from this event?"
             fullWidth
-            autoComplete="shipping country"
+            
+            variant="filled"
+            onChange={handleOnChange}
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            required
+            id="event"
+            name="event"
+            label="Event"
+            placeholder="Which event are you registering for?"
+            fullWidth
+            
             variant="filled"
             onChange={handleOnChange}
           />

@@ -29,20 +29,17 @@ export const faq = [
 
 export const eventInfo = [
   {
+    name:"Ideathon 2023",
     venue: " Venue: ISMT Kathmandu",
-    body: `Ideathon 2023 - "An ideathon is not just about generating ideas, but about harnessing the power of collaboration and creativity to turn those ideas into reality."`,
+    body: `Collaborative event in which participants come together to generate new ideas and solutions to a particular problem or challenge.`,
     date: "03-03-2023"
   },
   {
-    venue:"Comming Soon",
+    name:"UI/UX Workshop",
+    venue:"To be decided",
     body:`Comming Soon`,
     date: "Comming Soon"
-  },
-  {
-    venue:"Comming Soon",
-    body:`Comming Soon`,
-    date: "Comming Soon"
-  },
+  } 
 ]
 
 export const prize = [
