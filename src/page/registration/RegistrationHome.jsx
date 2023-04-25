@@ -6,7 +6,7 @@ import Registration from '../../components/Registration';
 
 const RegistrationHome = () => {
   return (
-    <Box>
+    <Box overflow="hidden">
         <Banner />
         <Registration />
         <FooterHome />
