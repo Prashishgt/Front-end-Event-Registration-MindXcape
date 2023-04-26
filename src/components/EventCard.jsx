@@ -27,29 +27,32 @@ export default function EventCard({ name, venue, body, date }) {
       <CardMedia
         sx={{ height: "150px", objectFit: "fill" }}
         image={venue === "Comming Soon" ? "" : Dummy}
-        title="green iguana"
+        title="Event Name"
       />
       <CardContent>
         <Typography
           gutterBottom
           variant="h3"
+          color="black"
           component="div"
-          textAlign="center"
+          textAlign="left"
         >
           {name}
         </Typography>
         <Typography
           gutterBottom
           variant="h4"
+          color="grey"
+          fontWeight="600"
           component="div"
-          textAlign="center"
+          textAlign="left"
         >
           Venue: {venue}
         </Typography>
         <Typography
           variant="subtitle1"
           color="text.secondary"
-          textAlign="center"
+          textAlign="left"
         >
           {body}
         </Typography>

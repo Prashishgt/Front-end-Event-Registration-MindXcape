@@ -5,7 +5,7 @@ import { faq } from '../../data';
 
 export default function Faq() {
   return (
-    <Box width="100%" display="flex" justifyContent="center" alignItems="center" flexDirection="column" >  
+    <Box width="100%" height="80vh" display="flex" justifyContent="center" alignItems="center" flexDirection="column" >  
       <Typography variant='h3' margin="5px">
         Faq
       </Typography> 
