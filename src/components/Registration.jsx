@@ -58,12 +58,12 @@ export default function Registration() {
       width="100%"
       justifyContent="center"
       alignItems="center"
-      margin="10px"
+      
     >
-      <Typography variant="h3" gutterBottom>
+      <Typography variant="h3" gutterBottom margin="20px">
         Registration Form
       </Typography>
-      <Grid width="60%" container spacing={4}>
+      <Grid width="90%" container spacing={4}>
         <Grid item xs={12}>
           <TextField
             required
